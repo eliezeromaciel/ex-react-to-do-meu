@@ -22,3 +22,12 @@ export const FormContainer = styled.div`
     margin-top: 2rem;
 
 `
+
+export const ToDoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    width: 100%; 
+    margin-top: 2rem;
+    
+`
