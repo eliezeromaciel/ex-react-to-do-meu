@@ -51,7 +51,7 @@ export function Home () {
 
                     {toDos.map(param => { 
                         return (
-                            <ToDoCard title={param.title} id={param.id} key={param.id} />
+                            <ToDoCard title={param.title} id={param.id} key={param.id} onAfterDelete={handleGetToDos} />
                         )})}    
 
                     {/* <ToDoCard title='To do 1'/>
