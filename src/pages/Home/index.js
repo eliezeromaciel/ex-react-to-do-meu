@@ -4,7 +4,7 @@ import { Input } from "../../components/Input"
 import { AddButton } from "../../components/AddButton"
 import {ToDoCard} from "../../components/ToDoCard/index"
 import { useEffect, useState } from "react"
-import { postTask, getAllTasks } from "../../Api/task"
+import { postTask, getAllTasks} from "../../Api/task"
 
 export function Home () {
 
@@ -51,8 +51,7 @@ export function Home () {
 
                     {toDos.map(param => { 
                         return (
-                            <ToDoCard title={param.title} key={param.id}/>
-                        //   <div key={param.id}>testando e {param.title}</div>
+                            <ToDoCard title={param.title} id={param.id} key={param.id} />
                         )})}    
 
                     {/* <ToDoCard title='To do 1'/>
