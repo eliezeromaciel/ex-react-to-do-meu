@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {darkBlue, white, yellow, red} from "../../constants/colors"
+import {darkBlue, white, red} from "../../constants/colors"
 
 export const Container = styled.div`
     background-color: ${darkBlue};
