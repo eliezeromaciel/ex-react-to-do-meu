@@ -12,6 +12,10 @@ export const getAllTasks = async () => {
 
 export const deleteTask = async (id) => {
     const response = await api.delete(`/tasks/${id}`)
-    console.log(response.data)
+    return response.data
+}
+
+export const updateTask = async (id, status) => {
+    const response = await api.put(`/tasks/${id}`, status)
     return response.data
 }

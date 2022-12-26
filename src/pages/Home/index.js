@@ -51,14 +51,8 @@ export function Home () {
 
                     {toDos.map(param => { 
                         return (
-                            <ToDoCard title={param.title} id={param.id} key={param.id} onAfterDelete={handleGetToDos} />
+                            <ToDoCard title={param.title} id={param.id} key={param.id} onAfterDelete={handleGetToDos} status={param.status} />
                         )})}    
-
-                    {/* <ToDoCard title='To do 1'/>
-                    <ToDoCard title='To do 2'/>
-                    <ToDoCard title='To do 3'/>
-                    <ToDoCard title='To do 4'/>
-                    <ToDoCard title='To do 5'/> */}
                 </ToDoContainer>
 
             </Body>
